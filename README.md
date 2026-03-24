@@ -1,23 +1,38 @@
 # ESG and Profitability Prediction
 
-This project investigates whether **Environmental, Social, and Governance (ESG)** and sustainability factors can be used to predict company profitability without relying on direct financial indicators such as Profit Margin, Revenue, or Market Capitalization. The study was conducted as part of the course *Application of Data Science in Finance*.  
+This project investigates whether Environmental, Social, and Governance (ESG) factors can be used to predict company profitability without relying on direct financial indicators such as Profit Margin, Revenue, or Market Capitalization.
+
+The study was conducted as part of the course Application of Data Science in Finance.
+
+## Key Takeaways
+- ESG factors can predict profitability without using direct financial variables
+- Random Forest achieved 86% accuracy after calibration
+- Environmental and Governance scores were the strongest predictors
+- Model supports ESG-based financial decision making
+
+## Tools
+Python, Pandas, Scikit-learn
 
 ## Problem Statement
-The central problem is to determine whether ESG and sustainability factors can predict profitability independently of financial variables that directly determine profit. Including such variables leads to **data leakage**, which produces artificially high accuracy and invalidates the results.  
+The objective is to determine whether ESG and sustainability factors can predict profitability independently of financial variables.
+
+Including financial indicators leads to data leakage, resulting in artificially high accuracy and unreliable models.
 
 ## Objectives
-- Evaluate whether ESG and sustainability features alone can predict profitability.  
-- Compare the performance of **Decision Tree, Logistic Regression, and Random Forest** models.  
-- Assess models using advanced evaluation metrics such as **Log Loss, McFadden’s R², Brier Score, and the KS statistic**.  
-- Apply **probability calibration** to ensure that probability estimates are reliable for financial applications.  
+- Evaluate whether ESG features alone can predict profitability  
+- Compare Decision Tree, Logistic Regression, and Random Forest  
+- Use advanced evaluation metrics including Log Loss, McFadden’s R², Brier Score, and KS statistic  
+- Apply probability calibration to improve reliability of predictions  
 
 ## Dataset
-The dataset includes:  
-- **Financial metrics**: Profit Margin, Revenue, Market Capitalization, Growth Rate  
-- **ESG scores**: Environmental, Social, Governance, Overall  
-- **Categorical attributes**: Industry, Region, Year  
+The dataset includes:
 
-The target variable, **Profitability**, was defined by categorizing Profit Margin into three groups:  
+- Financial metrics: Profit Margin, Revenue, Market Capitalization, Growth Rate  
+- ESG scores: Environmental, Social, Governance, Overall  
+- Categorical attributes: Industry, Region, Year  
+
+The target variable, Profitability, was defined as:
+
 - Low (< 5%)  
 - Medium (5–10%)  
 - High (≥ 10%)  
